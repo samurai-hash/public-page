@@ -1,0 +1,179 @@
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #0A0A0A;
+  color: #FAFAFA;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #FF2E45;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p, ul, li, a {
+  color: #CCCCCC;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #0A0A0A;
+  border-bottom: 2px solid #FF2E45;
+}
+
+.logo {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #BBBBBB;
+  margin-top: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #222;
+  max-width: 800px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a:hover {
+  color: #FF2E45;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  background-color: #000;
+}
+/* Sakura Animation */
+.sakura-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sakura {
+  position: absolute;
+  top: -50px;
+  width: 20px;
+  height: 14px;
+  background: radial-gradient(ellipse at 40% 40%, #ffcce6, #ff99cc);
+  border-radius: 60% 40% 60% 40% / 50% 50% 50% 50%;
+  opacity: 0.8;
+  animation: fall 12s linear infinite, sway 3s ease-in-out infinite alternate;
+}
+
+.sakura:nth-child(2) { left: 15%; animation-delay: 1s; animation-duration: 13s; }
+.sakura:nth-child(3) { left: 30%; animation-delay: 2s; animation-duration: 12s; }
+.sakura:nth-child(4) { left: 45%; animation-delay: 3s; animation-duration: 11s; }
+.sakura:nth-child(5) { left: 60%; animation-delay: 4s; animation-duration: 14s; }
+.sakura:nth-child(6) { left: 75%; animation-delay: 5s; animation-duration: 13s; }
+.sakura:nth-child(7) { left: 90%; animation-delay: 6s; animation-duration: 12s; }
+.sakura:nth-child(8) { left: 25%; animation-delay: 1.5s; animation-duration: 12.5s; }
+.sakura:nth-child(9) { left: 50%; animation-delay: 3.5s; animation-duration: 13.5s; }
+.sakura:nth-child(10) { left: 70%; animation-delay: 2.8s; animation-duration: 14.2s; }
+.sakura:nth-child(11) { left: 10%; animation-delay: 1.2s; animation-duration: 13s; }
+.sakura:nth-child(12) { left: 22%; animation-delay: 2.4s; animation-duration: 12.6s; }
+.sakura:nth-child(13) { left: 35%; animation-delay: 3.6s; animation-duration: 13.8s; }
+.sakura:nth-child(14) { left: 48%; animation-delay: 4.1s; animation-duration: 11.9s; }
+.sakura:nth-child(15) { left: 61%; animation-delay: 5.3s; animation-duration: 13.3s; }
+.sakura:nth-child(16) { left: 74%; animation-delay: 1.6s; animation-duration: 14.5s; }
+.sakura:nth-child(17) { left: 85%; animation-delay: 3.3s; animation-duration: 12.1s; }
+.sakura:nth-child(18) { left: 95%; animation-delay: 2.1s; animation-duration: 13.7s; }
+.sakura:nth-child(19) { left: 5%; animation-delay: 1.9s; animation-duration: 12.8s; }
+.sakura:nth-child(20) { left: 40%; animation-delay: 2.7s; animation-duration: 13.1s; }
+
+@keyframes fall {
+  0% { top: -50px; opacity: 0.9; }
+  100% { top: 100%; opacity: 0; }
+}
+
+@keyframes sway {
+  0% { transform: translateX(0px) rotate(0deg); }
+  100% { transform: translateX(40px) rotate(30deg); }
+}
+section.kiwi {
+  padding: 60px 40px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+section.kiwi h2 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #FF2E45;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+section.kiwi p {
+  font-size: 18px;
+  color: #CCCCCC;
+  margin-bottom: 24px;
+}
+.contact {
+  padding: 60px 40px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: 'Share Tech Mono', monospace;
+  color: #FF2E45;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.discord-link a {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background-color: #FF2E45;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.discord-link a:hover {
+  background-color: #ff2e467d;
+}
+
+
+
+
+
+
+
